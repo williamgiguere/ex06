@@ -48,29 +48,29 @@ shortnames (List names) {
     var name = names.elementAt(l);
     if (name.length < 8) {
       shortnames.add(name);
-    return shortnames;
     }
   }
+  return shortnames;
 }
 mediumnames (List names) {
-  List shortnames = new List();
+  List mediumnames = new List();
   for (int l = 0; l <= names.length -1; ++l) {
     var name = names.elementAt(l);
     if (name.length == 8) {
-      shortnames.add(name);
-    return shortnames;
+      mediumnames.add(name);
     }
   }
+  return mediumnames;
 }
 longnames (List names) {
-  List shortnames = new List();
+  List longnames = new List();
   for (int l = 0; l <= names.length -1; ++l) {
     var name = names.elementAt(l);
     if (name.length > 8) {
-      shortnames.add(name);
-    return shortnames;
+      longnames.add(name);   
     }
   }
+  return longnames;
 }
 
 //5.Prepare two lists, one with the names of players and their clubs, and the other with the names of clubs. Make the third list with clubs ordered by their names, where each club is followed by its list of players.

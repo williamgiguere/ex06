@@ -35,7 +35,7 @@ main() {
   
   //Main for Question # 4 
  
- List names = ['William', 'Nicolas', 'Christine', 'Maximuss','Jeanpaul'];
+ List names = ['William', 'Nicolas', 'Christine', 'Maximuss','Jean-paul','Jean-christophe'];
  print ('\nAnswer for #4 : ');
  print('Short names : ${shortnames(names)}');
  print('Medium length names : ${mediumnames(names)}');
