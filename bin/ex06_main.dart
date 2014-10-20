@@ -1,6 +1,6 @@
 library ex06;
 
-part 'ex06_functions.dart';
+part '../lib/ex06_functions.dart';
 
 main() {
   
