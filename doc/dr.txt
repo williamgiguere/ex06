@@ -1,5 +1,33 @@
 ex06
 
+12/20
+
+-1
+attention: formatage (voir: https://www.dartlang.org/articles/style-guide/)
+shortnames (List names) {
+-->
+shortNames (List names) {
+
+-4
+la bibliothèque (library) doit être dans le dossier lib
+
+-1 
+se il vous plaît, utiliser les types pour des paramètres de fonctions
+letters (var testscore) {
+
+6.4
+Answer for #4 : 
+se il vous plaît afficher la liste d'entrée
+
+6.5
+-1
+Prepare two lists, one with the names of players and their CLUBS
+-1
+se il vous plaît ne pas utiliser les positions d'éléments de la liste 
+pour faire une correspondance entre les clubs et les joueurs
+
+---
+
 ?/20
 
 SVPL utilisez le dossier lib  (voir mon exemple: https://github.com/dzenanr/two_files)
