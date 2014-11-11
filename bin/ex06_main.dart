@@ -1,6 +1,4 @@
-library ex06;
-
-part '../lib/ex06_functions.dart';
+import 'package:ex06/ex06_functions.dart';
 
 main() {
   
@@ -17,7 +15,7 @@ main() {
   DateTime date1 = new DateTime(2014, 10, 10);
   DateTime date2 = new DateTime(2014, 10, 8);
   print ('\nAnswer for #2 :');
-  print ('The difference, in days, between ${date1} and ${date2} is ${betweendates (date1, date2)}.');
+  print ('The difference, in days, between ${date1} and ${date2} is ${betweenDates (date1, date2)}.');
   
   //Main for Question # 3 
   
@@ -37,9 +35,10 @@ main() {
  
  List names = ['William', 'Nicolas', 'Christine', 'Maximuss','Jean-paul','Jean-christophe'];
  print ('\nAnswer for #4 : ');
- print('Short names : ${shortnames(names)}');
- print('Medium length names : ${mediumnames(names)}');
- print('Long names : ${longnames(names)}');
+ print ('List of names : $names');
+ print('Short names : ${shortNames(names)}');
+ print('Medium length names : ${mediumNames(names)}');
+ print('Long names : ${longNames(names)}');
  
   
   //Main for Question # 5
@@ -47,7 +46,7 @@ main() {
   List players = [['johnred',' maxred',' bobred'],['johngreen','maxgreen','bobgreen'],['johnblue','maxblue','bobblue']];
   List teams = ['red', 'green', 'blue'];
   print('\nAnswer for #5 : ');
-  print(teamsfunction(teams, players));
+  print(teamsFunction(teams, players));
   
   
 }

@@ -1,4 +1,4 @@
-part of ex06;
+library ex06;
 
 //1.Determine if a given string is a palindrome.
 
@@ -15,7 +15,7 @@ palindrome (String wordtest) {
 
 //2.Calculate the number of days between two dates.
 
-int betweendates (DateTime date1, DateTime date2) {
+int betweenDates (DateTime date1, DateTime date2) {
   Duration nbofdays = date1.difference(date2);
   int days = nbofdays.inDays;
   return days;
@@ -24,7 +24,7 @@ int betweendates (DateTime date1, DateTime date2) {
 
 //3.Convert number grades to letter grades by using a standard.
 
-letters (var testscore) {
+letters (int testscore) {
   if (testscore <= 100 && testscore >=90) {
     return 'A';
   } else if (testscore < 90 && testscore >= 80) {
@@ -42,40 +42,40 @@ letters (var testscore) {
 //4.Given a list of names, make a list of three lists, first with names shorter than 8 letters, second with names longer than 8 letters, and third with names that are 8 letters long.
 
 
-shortnames (List names) {
-  List shortnames = new List();
+shortNames (List names) {
+  List shortNames = new List();
   for (int l = 0; l <= names.length -1; ++l) {
     var name = names.elementAt(l);
     if (name.length < 8) {
-      shortnames.add(name);
+      shortNames.add(name);
     }
   }
-  return shortnames;
+  return shortNames;
 }
-mediumnames (List names) {
-  List mediumnames = new List();
+mediumNames (List names) {
+  List mediumNames = new List();
   for (int l = 0; l <= names.length -1; ++l) {
     var name = names.elementAt(l);
     if (name.length == 8) {
-      mediumnames.add(name);
+      mediumNames.add(name);
     }
   }
-  return mediumnames;
+  return mediumNames;
 }
-longnames (List names) {
-  List longnames = new List();
+longNames (List names) {
+  List longNames = new List();
   for (int l = 0; l <= names.length -1; ++l) {
     var name = names.elementAt(l);
     if (name.length > 8) {
-      longnames.add(name);   
+      longNames.add(name);   
     }
   }
-  return longnames;
+  return longNames;
 }
 
 //5.Prepare two lists, one with the names of players and their clubs, and the other with the names of clubs. Make the third list with clubs ordered by their names, where each club is followed by its list of players.
 
-Map teamsfunction (List team, List player) {
+Map teamsFunction (List team, List player) {
   Map teamlist = new Map();
   teamlist[team.elementAt(0)] = [player.elementAt(0)];
   teamlist[team.elementAt(1)] = [player.elementAt(1)];
